@@ -1,0 +1,171 @@
+.color1{
+  color:#666666;
+}
+.color2{
+  color:#999999;
+}
+.color3{
+  color:#b0b0b0;
+}
+.color4{
+  color:#d5d5d5;
+}
+
+.chengdubg{
+ background-image:url(../images/chengdubg.png);
+ background-clip: padding-box;
+ background-size: cover;
+ background-position:center;
+ color:#fff;
+}
+.qingdaobg{
+ background-image:url(../images/qingdaobg.png);
+ background-clip:padding-box;
+ background-size: cover;
+ background-position:center;
+}
+.changshabg{
+ background-image:url(../images/changshabg.png);
+ background-clip:padding-box;
+ background-size: cover;
+ background-position:center;
+}
+.nanchangbg{
+ background-image:url(../images/nanchangbg.png);
+ background-clip:padding-box;
+ background-size: cover;
+ background-position:center;
+}
+.zhengzhoubg{
+ background-image:url(../images/zhengzhoubg.png);
+ background-clip:padding-box;
+ background-size: cover;
+ background-position:center;
+}
+.chongqingbg{
+ background-image:url(../images/chongqingbg.png);
+ background-clip:padding-box;
+ background-size: cover;
+ background-position:center;
+}
+
+html,body{
+  width:100%;
+}
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  color:#333333;
+}
+.weixin{
+    width: 38px;
+    height: 100%;
+    display: inline-block;
+    background: url("../images/weixin.png") center center no-repeat;
+}
+.sina {
+    width: 38px;
+    height: 100%;
+    display: inline-block;
+    background: url("../images/sina.png") center center no-repeat;
+}
+.nav {
+  margin:auto;
+  display:block;
+  height:5em;
+  width:100%;
+  /*background-color: rgba(0,0,0,0.08);*/
+  background-color: rgba(40,40,40,0.5);
+  position: fixed;
+  top:0;
+  z-index:2;
+  min-width:960px;
+}
+.nav .brand{
+    display: inline-block;
+    float: left;
+    height:100%;
+    width: 30%;
+    background: url("../images/logo.png") center center no-repeat;
+}
+.nav .menu{
+  width: 70%;
+  height:100%;
+  display: inline-block;
+  float: right;
+  text-align: center;
+}
+.nav .menu .item{
+  vertical-align: middle;
+  display: inline-block;
+  height:100%;
+  line-height:5em;
+  position: relative;
+}
+.nav .menu .item > label{
+  margin:0 1em;
+  font-size:120%;
+  color:#fff;
+}
+.nav .menu .item > .popdown{
+  display:none;
+}
+.nav .menu .item:hover > .popdown{
+  display:block;
+  position:absolute;
+  top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.teacherbox {
+  position: relative;
+  height:100%;
+  line-height:1.6em;
+
+  margin: auto;
+  width: fit-content;
+}
+.teacherbox img{
+  height:100%;
+  width:100%;
+}
+.teacherbox .popup{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100px;
+  background:rgba(0,0,0,0.5);
+  padding:5% 10%;
+  color:#ffffff;
+  transition: all 1s;
+  -webkit-transition: all 1s; 
+}
+.teacherbox:hover .popup{
+  height:100%;
+}
+.teacherbox .exinfo{
+  display: none;
+}
+.teacherbox:hover .exinfo{
+  display: block;
+}
+
+.index .qcarrousel  .dotsbox .dot{
+  width:100px;
+  height:5px;
+  border:none;
+  border-radius:0;
+}
+.index .qcarrousel .dotslist .dot::before { 
+    content: ''; 
+    position: absolute; 
+    top: -20px; 
+    right: -0px; 
+    bottom: -20px; 
+    left: -0px; 
+}
+.index .qcarrousel .dotslist .dot:hover::before { 
+    border-radius:0;
+    background:rgba(0,0,0,0);
+}
