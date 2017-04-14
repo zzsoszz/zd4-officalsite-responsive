@@ -55,6 +55,7 @@ html,body{
 body{
   font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   color:#333333;
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px)/ (1400 - 300)));
 }
 .weixin{
     width: 38px;

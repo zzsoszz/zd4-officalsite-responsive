@@ -241,3 +241,48 @@
 }
 
 
+
+.popupwrap{
+    padding:10% 0;
+    border-radius:10px;
+    width: 100%;
+    display: inline-block;
+    color:#aeacb3;
+    border:1px solid #4c4c4c;
+    position:relative;
+    text-align: center;
+}
+.popupwrap .popup{
+    display:block;
+    opacity:0;
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    height:0px;
+    z-index: 2;
+    color: #fff;
+    overflow: hidden;
+    text-align:left;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding:10%;
+    transition:opacity 1s ease,transform 1s ease;
+    width:100%;
+    height:100%;
+}
+.popupwrap:hover .popup{
+    opacity:1;
+    transform:scale(1.2);
+}
+.popupwrap.active{
+    background:#33d1ff;
+    color:#ffffff;
+}
+.popupwrap img{
+    width:50%;
+}
+
+
