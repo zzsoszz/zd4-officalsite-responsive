@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>bossapp</title>
-	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name=viewport content="width=device-width, initial-scale=1,maximum-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/component.css">
+	<link rel="stylesheet" href="css/utils.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script type="text/javascript" src="js/lodash.min.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -26,128 +27,6 @@
 			width:100%;
 			height:100%;
 		}
-
-
-		/* Element Query Grid */
-	    @element '[data-grid]' {
-	      $this,
-	      $this *,
-	      $this *:before,
-	      $this *:after {
-	        -webkit-box-sizing: border-box;
-	        -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-	        text-rendering: optimizeLegibility;
-	        -webkit-font-smoothing: antialiased;
-	        -moz-osx-font-smoothing: grayscale;
-	        font-kerning: auto;
-	      }
-	      $this {
-	        line-height: 1.4;
-	        font-weight: 400;
-	        font-family: 'Open Sans', 'Source Sans Pro', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
-	        -webkit-text-size-adjust: 100%;
-	      }
-	      $this:after,
-	      $this [data-row]:after {
-	        content: '';
-	        display: block;
-	        clear: both;
-	      }
-	      $this [class*=-col-],
-	      $this [class*=-split-] { float: left; }
-	      $this [class^=col-1] { width: 10%; }
-	      $this [class^=col-2] { width: 20%; }
-	      $this [class^=col-3] { width: 30%; }
-	      $this [class^=col-4] { width: 40%; }
-	      $this [class^=col-5] { width: 50%; }
-	      $this [class^=col-6] { width: 60%; }
-	      $this [class^=col-7] { width: 70%; }
-	      $this [class^=col-8] { width: 80%; }
-	      $this [class^=col-9] { width: 90%; }
-	      $this [class^=col-10] { width: 100%; }
-	      $this [class^=split-1] { width: calc(100%/1); }
-	      $this [class^=split-2] { width: calc(100%/2); }
-	      $this [class^=split-3] { width: calc(100%/3); }
-	      $this [class^=split-4] { width: calc(100%/4); }
-	      $this [class^=split-5] { width: calc(100%/5); }
-	      $this [class^=split-6] { width: calc(100%/6); }
-	      $this [class^=split-7] { width: calc(100%/7); }
-	      $this [class^=split-8] { width: calc(100%/8); }
-	      $this [class^=split-9] { width: calc(100%/9); }
-	      $this [class^=split-10] { width: calc(100%/10); }
-	    }
-	    @element '[data-grid]' and (max-width: 400px) {
-	      $this [class*=small-col-1] { width: 10%; }
-	      $this [class*=small-col-2] { width: 20%; }
-	      $this [class*=small-col-3] { width: 30%; }
-	      $this [class*=small-col-4] { width: 40%; }
-	      $this [class*=small-col-5] { width: 50%; }
-	      $this [class*=small-col-6] { width: 60%; }
-	      $this [class*=small-col-7] { width: 70%; }
-	      $this [class*=small-col-8] { width: 80%; }
-	      $this [class*=small-col-9] { width: 90%; }
-	      $this [class*=small-col-10] { width: 100%; }
-	      $this [class*=small-split-1] { width: calc(100%/1); }
-	      $this [class*=small-split-2] { width: calc(100%/2); }
-	      $this [class*=small-split-3] { width: calc(100%/3); }
-	      $this [class*=small-split-4] { width: calc(100%/4); }
-	      $this [class*=small-split-5] { width: calc(100%/5); }
-	      $this [class*=small-split-6] { width: calc(100%/6); }
-	      $this [class*=small-split-7] { width: calc(100%/7); }
-	      $this [class*=small-split-8] { width: calc(100%/8); }
-	      $this [class*=small-split-9] { width: calc(100%/9); }
-	      $this [class*=small-split-10] { width: calc(100%/10); }
-	      $this [class*=hide-small] { display: none; }
-	    }
-	    @element '[data-grid]' and (min-width: 400px) and (max-width: 800px) {
-	      $this [class*=medium-col-1] { width: 10%; }
-	      $this [class*=medium-col-2] { width: 20%; }
-	      $this [class*=medium-col-3] { width: 30%; }
-	      $this [class*=medium-col-4] { width: 40%; }
-	      $this [class*=medium-col-5] { width: 50%; }
-	      $this [class*=medium-col-6] { width: 60%; }
-	      $this [class*=medium-col-7] { width: 70%; }
-	      $this [class*=medium-col-8] { width: 80%; }
-	      $this [class*=medium-col-9] { width: 90%; }
-	      $this [class*=medium-col-10] { width: 100%; }
-	      $this [class*=medium-split-1] { width: calc(100%/1); }
-	      $this [class*=medium-split-2] { width: calc(100%/2); }
-	      $this [class*=medium-split-3] { width: calc(100%/3); }
-	      $this [class*=medium-split-4] { width: calc(100%/4); }
-	      $this [class*=medium-split-5] { width: calc(100%/5); }
-	      $this [class*=medium-split-6] { width: calc(100%/6); }
-	      $this [class*=medium-split-7] { width: calc(100%/7); }
-	      $this [class*=medium-split-8] { width: calc(100%/8); }
-	      $this [class*=medium-split-9] { width: calc(100%/9); }
-	      $this [class*=medium-split-10] { width: calc(100%/10); }
-	      $this [class*=hide-medium] { display: none; }
-	    }
-	    @element '[data-grid]' and (min-width: 800px) {
-	      $this [class*=large-col-1] { width: 10%; }
-	      $this [class*=large-col-2] { width: 20%; }
-	      $this [class*=large-col-3] { width: 30%; }
-	      $this [class*=large-col-4] { width: 40%; }
-	      $this [class*=large-col-5] { width: 50%; }
-	      $this [class*=large-col-6] { width: 60%; }
-	      $this [class*=large-col-7] { width: 70%; }
-	      $this [class*=large-col-8] { width: 80%; }
-	      $this [class*=large-col-9] { width: 90%; }
-	      $this [class*=large-col-10] { width: 100%; }
-	      $this [class*=large-split-1] { width: calc(100%/1); }
-	      $this [class*=large-split-2] { width: calc(100%/2); }
-	      $this [class*=large-split-3] { width: calc(100%/3); }
-	      $this [class*=large-split-4] { width: calc(100%/4); }
-	      $this [class*=large-split-5] { width: calc(100%/5); }
-	      $this [class*=large-split-6] { width: calc(100%/6); }
-	      $this [class*=large-split-7] { width: calc(100%/7); }
-	      $this [class*=large-split-8] { width: calc(100%/8); }
-	      $this [class*=large-split-9] { width: calc(100%/9); }
-	      $this [class*=large-split-10] { width: calc(100%/10); }
-	      $this [class*=hide-large] { display: none; }
-	    }
-
-		
 	</style>
 </head>
 <body class="index" style="background:#ffffff">
@@ -155,6 +34,8 @@
 	<div class="nav" id="nav">
 		<a class="brand" href="#">
 		</a>
+		<label for="menustatus"><span>≡</span></label>
+		<input type="checkbox" id="menustatus">
 		<div class="menu">
 			<div class="item">
 				<label>首页</label>
@@ -190,8 +71,8 @@
 				</label>
 			</div>
 		</div>
+
 	</div>
-	
 
 
 	<div class="qcarrousel" >
@@ -223,6 +104,7 @@
 		</div>
 	</div>
 	
+
 	<div style="background:#282828;overflow: hidden;">
 		<h1 style="color:#fff;text-align: center;">导师介绍</h1>
 		<div style="margin:5% 0">
@@ -529,41 +411,42 @@
 		</div>
 	</div>
 
-	
-	<div style="padding:100px 10%;background: #282828;color:#c7c7c7;text-align: center;font-size: 18px;">
-		<div style="width: 80%;">
-			<div style="display: inline-block;text-align: left;width: 70%;line-height:2em;vertical-align: top;">
-				<div>
-					<div style="display: inline-block;width:25%;vertical-align: top;">
-						<div>首页</div>
-						<div>课程中心</div>
-						<div>下载APP</div>
-						<div>关于我们</div>
-					</div>
-					<div style="display: inline-block;width:70%;vertical-align: top;">
-						<div>运营总部</div>
-						<div>电话：400-028-8383</div>
-						<div>邮箱：service@BossApp.cn</div>
-						<div>地址：成都市高新区天府三街新希望国际座1105室</div>
+
+	<div style="background: #282828;color:#c7c7c7;text-align: center;line-height:2em;padding:2em;">
+		<div style="width: 80%;margin:auto;">
+			<div class="row  bottom-lg" style="">
+				<div class="col-lg-8 col-md-8 col-sm-12" >
+					<div  class="row">
+						<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top:1em;">
+							<a style="display:block;color:#c7c7c7" href="${ctx}/">首页</a>
+							<a style="display:block;color:#c7c7c7" href="${ctx}/coursecenter">课程中心</a>
+							<a style="display:block;color:#c7c7c7" href="${ctx}/downloadindex">下载APP</a>
+							<a style="display:block;color:#c7c7c7" href="${ctx}/about">关于我们</a>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-12" style="text-align: left;padding-top:1em;">
+							<div style="font-weight:700">运营总部</div>
+							<div>电话：400-028-8383<span style="color:#717171;font-size:80%;margin-left:1em;">(工作日:09:30-18:00)</span></div>
+							<div>邮箱：service@BossApp.cn</div>
+							<div>地址：北京市海淀区中关村东路18号１号楼13层Ｃ-1603-044号</div>
+						</div>
 					</div>
 				</div>
-				<div  style="margin-top:50px;font-size:16px;color:#616161">
-						<span>北京波士商学院教育科技有限公司</span> 
-						<span style="margin-left:10px;">www.bossapp.cn</span> 
-						<span style="margin-left:5px;">2015-2016</span> 
-						<span style="margin-left:5px;">@All Rights Teserved</span> 
-						<span style="margin-left:5px;">所有权保留</span> 
-						<span style="margin-left:5px;">京ICP备14051192号</span> 
+				<div  class="col-lg-4 col-md-4 col-sm-12" style="margin-top:1em;"  >
+					<img src="images/bossqrcode.png" style="width:10em;height:10em;">
+					<div style="margin-top:1em;">波士商学院微信公众号</div>
 				</div>
 			</div>
-			<div style="display: inline-block;width: 25%;vertical-align: top;">
-				<img src="images/bossqrcode.png" style="width: 50%;">
-				<p>波士商学院微信公众号</p>
+			<div  style="margin-top:2em;font-size:80%;color:#fff;opacity:0.5">
+					<span>北京波士商学院教育科技有限公司</span> 
+					<span style="margin-left:2em;">www.bossapp.cn</span> 
+					<span style="margin-left:1em;">2015-2016</span> 
+					<span style="margin-left:1em;">@All Rights Teserved</span> 
+					<span style="margin-left:1em;">所有权保留</span> 
+					<span style="margin-left:1em;">京ICP备16016793号</span> 
 			</div>
 		</div>
-		
 	</div>
-	
+
 	
 </body>
 

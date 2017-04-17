@@ -69,17 +69,16 @@ body{
     display: inline-block;
     background: url("../images/sina.png") center center no-repeat;
 }
+/*
 .nav {
   margin:auto;
   display:block;
   height:5em;
   width:100%;
-  /*background-color: rgba(0,0,0,0.08);*/
   background-color: rgba(40,40,40,0.5);
   position: fixed;
   top:0;
   z-index:2;
-  min-width:960px;
 }
 .nav .brand{
     display: inline-block;
@@ -117,7 +116,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
-
+*/
 .teacherbox {
   position: relative;
   height:100%;

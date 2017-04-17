@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>bossapp</title>
-	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name=viewport content="width=device-width, initial-scale=1,maximum-scale=1">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/utils.css">
@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="js/EQCSS.min.js"></script>
 	<script src="js/greensock/TweenMax.js"></script>
 	<script src="js/greensock/TimelineMax.js"></script>
+
 	<style>
 		.title{
 			font-size:32px;
@@ -22,9 +23,13 @@
 
 
 <body style="background:#fff;">
-	<div class="nav">
+	
+
+	<div class="nav" id="nav">
 		<a class="brand" href="#">
 		</a>
+		<label for="menustatus"><span>≡</span></label>
+		<input type="checkbox" id="menustatus">
 		<div class="menu">
 			<div class="item">
 				<label>首页</label>
@@ -61,40 +66,41 @@
 			</div>
 		</div>
 	</div>
-	<div class="toparea" style="height:900px;background:#282828;">
-	</div>
-	<div style="width:80%;margin:auto auto -800px auto ;overflow: hidden;transform: translateY(-800px);">
 
-				<div style="padding-left:50px;position:relative;">
-					<div style="overflow:hidden;color:#bdbdbd;font-size:20px;line-height:2em;">
-						<p style="font-size:30px">
-						创始人说
-						</p>
-						<p>
-						教育是一份高尚的事业<br/>
-						它有师恩如山里的高尚尊严<br/>
-						也在亦师亦友中间成人达己<br/>
-						</p>
-						<p>
-						商学教育是当代教育中最富成果的一种<br/>
-						它掌握商业资源入口，服务社会核心人群<br/>
-						它实现企业持续发展，托起创新创业梦想<br/>
-						</p>
-						<p>
-						机遇这样的认识和信仰，我们已坚守10年。备受鼓舞的是，<br/>
-						10年积累+互联网升级而成并领军全国的“波士商学”，已经倍受市场的追捧。<br/>
-						这就是我们选择并忠诚的事业，让我们一起严守“说真话、办实事、出成绩”的价值观，<br/>
-						务实本分的做好产品服务。
-						</p>
-					</div>
-					<img   style="position:absolute;right: 0;top:0" src="images/about/hat.png" alt="">
-					<div>
-						<img  style="display: inline-block;vertical-align: middle;"  src="images/about/luokuan.png" alt="">
-						<img  style="display: inline-block;vertical-align: middle;margin-left:30px;"  src="images/about/sign.png" alt="">
-					</div>
-				</div>
-				
-				<div style="margin-top:50px;background:#ffffff;padding:80px 50px;box-shadow:2px 2px 20px #aaaaaa;line-height:1.6em;">
+	
+	<div class="toparea" style="background:#282828;padding:5%;position: relative;">
+		<div style="color:#bdbdbd;font-size:20px;line-height:2em;">
+			<p style="font-size:30px">
+			创始人说
+			</p>
+			<p>
+			教育是一份高尚的事业<br/>
+			它有师恩如山里的高尚尊严<br/>
+			也在亦师亦友中间成人达己<br/>
+			</p>
+			<p>
+			商学教育是当代教育中最富成果的一种<br/>
+			它掌握商业资源入口，服务社会核心人群<br/>
+			它实现企业持续发展，托起创新创业梦想<br/>
+			</p>
+			<p>
+			机遇这样的认识和信仰，我们已坚守10年。备受鼓舞的是，<br/>
+			10年积累+互联网升级而成并领军全国的“波士商学”，已经倍受市场的追捧。<br/>
+			这就是我们选择并忠诚的事业，让我们一起严守“说真话、办实事、出成绩”的价值观，<br/>
+			务实本分的做好产品服务。
+			</p>
+		</div>
+		<img   style="position:absolute;right: 0;top:0" src="images/about/hat.png" alt="">
+		<div>
+			<img  style="display: inline-block;vertical-align: middle;"  src="images/about/luokuan.png" alt="">
+			<img  style="display: inline-block;vertical-align: middle;margin-left:2em;"  src="images/about/sign.png" alt="">
+		</div>
+	</div>
+	
+	
+	<div style="width:90%;margin:auto;">
+
+				<div style="margin-top:5em;background:#ffffff;padding:5%;box-shadow:2px 2px 20px #aaaaaa;line-height:1.6em;">
 					<h1 class="title">
 					公司介绍
 					</h1>
@@ -117,61 +123,68 @@
 					<h1 class="title">
 					已经开设
 					</h1>
-					<div class="floatpureimagecontainer">
-						<div class="item">
+					<div class="row">
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
 							<img src="images/about/changsha.png">
 							<p>长沙分院</p>
 						</div>
-						<div class="item">
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
 							<img src="images/about/chengdu.png">
 							<p>成都分院</p>
 						</div>
-						<div class="item">
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
 							<img src="images/about/zhengzhou.png">
 							<p>郑州分院</p>
 						</div>
-						<div class="item">
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
 							<img src="images/about/nanchang.png">
 							<p>南昌分院</p>
 						</div>
-						<div class="item">
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
 							<img src="images/about/qingdao.png">
 							<p>青岛分院</p>
 						</div>
-						<div class="item">
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
 							<img src="images/about/chongqing.png">
 							<p>重庆分院</p>
 						</div>
 					</div>
-
-
+					
 					<h1 class="title">
 					正在筹建
 					</h1>
-					<div class="floatpureimagecontainer">
-						<div class="item">
-							<img src="images/about/beijing.png">
-							<p>北京分院</p>
+					<div class="row">
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
+							<img src="images/about/changsha.png">
+							<p>长沙分院</p>
 						</div>
-						<div class="item">
-							<img src="images/about/shanghai.png">
-							<p>上海分院</p>
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
+							<img src="images/about/chengdu.png">
+							<p>成都分院</p>
 						</div>
-						<div class="item">
-							<img src="images/about/shenzhen.png">
-							<p>深圳分院</p>
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
+							<img src="images/about/zhengzhou.png">
+							<p>郑州分院</p>
 						</div>
-						<div class="item">
-							<img src="images/about/xian.png">
-							<p>西安</p>
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
+							<img src="images/about/nanchang.png">
+							<p>南昌分院</p>
+						</div>
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
+							<img src="images/about/qingdao.png">
+							<p>青岛分院</p>
+						</div>
+						<div class="col-lg-1 col-sm-6 col-md-4" style="text-align: center;">
+							<img src="images/about/chongqing.png">
+							<p>重庆分院</p>
 						</div>
 					</div>
-
+					
 					<h1 class="title">
 					服务特色
 					</h1>
-					<div class="commonbox" style="line-height:1.6em;">
-						<div class="item">
+					<div class="row" style="line-height:1.6em;">
+						<div class="col-lg-3 col-sm-12 col-md-6">
 							<div style="padding:10px 20px;margin:10px;border:1px solid #e4e4e4;">
 								<p style="font-size:24px;">
 								 管理培训实力
@@ -181,7 +194,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="item">
+						<div class="col-lg-3 col-sm-12 col-md-6">
 							<div style="padding:10px 20px;margin:10px;border:1px solid #e4e4e4;">
 								<p style="font-size:24px;">
 								 精英财富圈
@@ -191,7 +204,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="item">
+						<div class="col-lg-3 col-sm-12 col-md-6">
 							<div style="padding:10px 20px;margin:10px;border:1px solid #e4e4e4;">
 								<p style="font-size:24px;">
 								 行业专业度
@@ -201,7 +214,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="item">
+						<div class="col-lg-3 col-sm-12 col-md-6">
 							<div style="padding:10px 20px;margin:10px;border:1px solid #e4e4e4;">
 								<p style="font-size:24px;">
 								 师资优势力
@@ -219,37 +232,44 @@
 
 	</div>
 
-	<div style="padding:100px 10%;background: #282828;color:#c7c7c7;text-align: center;font-size: 18px;">
-		<div style="display: inline-block;text-align: left;width: 60%;line-height:2em;vertical-align: top;">
-			<div>
-				<div style="display: inline-block;width:25%;vertical-align: top;">
-					<div>首页</div>
-					<div>课程中心</div>
-					<div>下载APP</div>
-					<div>关于我们</div>
+
+
+
+
+	<div style="background: #282828;color:#c7c7c7;text-align: center;line-height:2em;padding:2em;margin-top: 2em;">
+		<div style="width: 80%;margin:auto;">
+			<div class="row  bottom-lg" style="">
+				<div class="col-lg-8 col-md-8 col-sm-12" >
+					<div  class="row">
+						<div class="col-lg-4 col-md-4 col-sm-12" style="padding-top:1em;">
+							<a style="display:block;color:#c7c7c7" href="${ctx}/">首页</a>
+							<a style="display:block;color:#c7c7c7" href="${ctx}/coursecenter">课程中心</a>
+							<a style="display:block;color:#c7c7c7" href="${ctx}/downloadindex">下载APP</a>
+							<a style="display:block;color:#c7c7c7" href="${ctx}/about">关于我们</a>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-12" style="text-align: left;padding-top:1em;">
+							<div style="font-weight:700">运营总部</div>
+							<div>电话：400-028-8383<span style="color:#717171;font-size:80%;margin-left:1em;">(工作日:09:30-18:00)</span></div>
+							<div>邮箱：service@BossApp.cn</div>
+							<div>地址：北京市海淀区中关村东路18号１号楼13层Ｃ-1603-044号</div>
+						</div>
+					</div>
 				</div>
-				<div style="display: inline-block;width:70%;vertical-align: top;">
-					<div>运营总部</div>
-					<div>电话：400-028-8383</div>
-					<div>邮箱：service@BossApp.cn</div>
-					<div>地址：成都市高新区天府三街新希望国际座1105室</div>
+				<div  class="col-lg-4 col-md-4 col-sm-12" style="margin-top:1em;"  >
+					<img src="images/bossqrcode.png" style="width:10em;height:10em;">
+					<div style="margin-top:1em;">波士商学院微信公众号</div>
 				</div>
 			</div>
-			<div  style="margin-top:50px;font-size:16px;color:#616161">
+			<div  style="margin-top:2em;font-size:80%;color:#fff;opacity:0.5">
 					<span>北京波士商学院教育科技有限公司</span> 
-					<span style="margin-left:10px;">www.bossapp.cn</span> 
-					<span style="margin-left:5px;">2015-2016</span> 
-					<span style="margin-left:5px;">@All Rights Teserved</span> 
-					<span style="margin-left:5px;">所有权保留</span> 
-					<span style="margin-left:5px;">京ICP备14051192号</span> 
+					<span style="margin-left:2em;">www.bossapp.cn</span> 
+					<span style="margin-left:1em;">2015-2016</span> 
+					<span style="margin-left:1em;">@All Rights Teserved</span> 
+					<span style="margin-left:1em;">所有权保留</span> 
+					<span style="margin-left:1em;">京ICP备16016793号</span> 
 			</div>
-		</div>
-		<div style="display: inline-block;width: 30%;vertical-align: top;">
-			<img src="images/bossqrcode.png" style="width: 60%;">
-			<p>波士商学院微信公众号</p>
 		</div>
 	</div>
-
 
 
 

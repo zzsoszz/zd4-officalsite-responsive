@@ -226,11 +226,14 @@
 .timelinebox .timeitem .dot .bottom img{
   padding:5px;
 }
+
+
+#timelinebox1{
+  height: 600px;
+}
 #timelinebox1.qslidemultiply .qslideviewbox .item{
     position: absolute;
     width: 400px;
-    max-height:height: 605px;
-    height: fit-content;
     padding:0px;
 }
 #timelinebox1.qslidemultiply .prev{
@@ -286,3 +289,122 @@
 }
 
 
+
+/**/
+@element '.nav'  and (max-width: 600px){
+  $this {
+    margin:auto;
+    display:block;
+    width:100%;
+    background:#333333;
+    position: static;
+    overflow: hidden;
+  }
+  $this .brand{
+      display: inline-block;
+      float: left;
+      height: 3em;
+      width: 70%;
+      font-size:150%;
+      background: url("../images/logo.png") center center no-repeat;
+  }
+  $this > label {
+    display: inline-block;
+    float:right;
+    width:30%;
+    color:#ffffff;
+    padding: 1em;
+    font-size: 150%;
+  }
+  $this .menu{
+    text-align: center;
+    display:none;
+  }
+  $this input{
+    display: none;
+  }
+  $this input:checked + .menu{
+    display: block;
+    width:100%;
+  }
+  $this .menu .item{
+    overflow: hidden;
+    height:5em;
+    width:100%;
+    line-height:5em;
+    position: relative;
+  }
+  $this .menu .item > label{
+    margin:0 1em;
+    color:#fff;
+    word-wrap:break-word;
+  }
+  $this .menu .item > .popdown{
+    display:none;
+  }
+  $this .menu .item:hover > .popdown{
+    display:block;
+    position:absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+
+/*pc*/
+@element '.nav'  and (min-width: 640px){
+  $this {
+    margin:auto;
+    display:block;
+    height:5em;
+    width:100%;
+    background-color: rgba(40,40,40,0.5);
+    position: fixed;
+    top:0;
+    z-index:2;
+  }
+  $this .brand{
+      display: inline-block;
+      float: left;
+      height:100%;
+      width: 30%;
+      background: url("../images/logo.png") center center no-repeat;
+  }
+  $this > input {
+    display: none;
+  }
+  $this > label {
+    display: none;
+  }
+  $this .menu{
+    width: 70%;
+    height:100%;
+    display: inline-block;
+    float: right;
+    text-align: center;
+  }
+  $this .menu .item{
+    vertical-align: middle;
+    display: inline-block;
+    height:100%;
+    line-height:5em;
+    position: relative;
+  }
+  $this .menu .item > label{
+    margin:0 1em;
+    font-size:120%;
+    color:#fff;
+  }
+  $this .menu .item > .popdown{
+    display:none;
+  }
+  $this .menu .item:hover > .popdown{
+    display:block;
+    position:absolute;
+    top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+}
