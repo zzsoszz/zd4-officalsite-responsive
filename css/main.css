@@ -349,6 +349,9 @@ body{
 .timelinebox .timeitem .bottom img{
   
 }
+#timelinebox1.qslidemultiply{
+  height: 500px;
+}
 #timelinebox1.qslidemultiply .qslideviewbox .item{
     position: absolute;
     width: 400px;
