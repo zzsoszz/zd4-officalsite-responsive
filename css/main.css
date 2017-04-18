@@ -82,6 +82,9 @@ body{
   $this .menu .item.active > label{
    color:#4fb7e2;
   }
+  $this .menu .item:hover > label{
+   color:#4fb7e2;
+  }
   $this .menu .item > label{
     margin:0 1em;
     color:#fff;
@@ -144,6 +147,9 @@ body{
     color:#fff;
   }
   $this .menu .item.active > label{
+   color:#4fb7e2;
+  }
+  $this .menu .item:hover > label{
    color:#4fb7e2;
   }
   $this .menu .item > .popdown{
