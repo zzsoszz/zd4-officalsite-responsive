@@ -29,8 +29,6 @@
 			width:100%;
 			height:100%;
 		}
-
-
 		#bannerWraper{
 			position: relative;
 			width:100%;
@@ -61,33 +59,6 @@
 		#bannerWraper #banner.qslidemultiply .qslideviewbox .item img{
 			width: 100%;
 		}
-		.footer{
-				background: #282828;
-				color:#c7c7c7;
-				text-align: center;
-				line-height:2em;
-				padding:2em;
-		}
-		@element '.footer' and (max-width:600px)
-		{
-			$this #addresses{
-				text-align: center;
-			}
-		}
-		@element '.footer' and (min-width:600px)
-		{
-			$this #addresses{
-				text-align: left;
-			}
-		}
-		/*
-		@element '#banner' {
-			$this {
-				width:100%;
-				height:eval('offsetWidth/(width/height)');
-			}
-		}
-		*/
 	</style>
 </head>
 <body class="index" style="background:#ffffff">
@@ -441,12 +412,12 @@
 	<div  style="background:#414141;padding:5% 0;">
 		<h1 style="color:#fff;text-align: center;">分院就近报名</h1>
 		<div style="width:80%;margin:auto;">
-			<div data-grid >
-				<div class="large-split-6 medium-split-3 small-split-2">
+			<div data-grid id="schools">
+				<div class="item large-split-6 medium-split-3 small-split-2">
 					<div class="popupwrap">
 						<img  src="images/changsha.png"  alt="" />
 						<p style="line-height:3em;">长沙分院</p>
-						<div class="popup changshabg">
+						<div class="popup">
 							<p>
 								电话：<br/>028-011121311
 							</p>
@@ -456,11 +427,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="large-split-6 medium-split-3 small-split-2">
+				<div class="item large-split-6 medium-split-3 small-split-2">
 					<div class="popupwrap">
 						<img src="images/chengdu.png"  alt="" />
 						<p style="line-height:3em;">长沙分院</p>
-						<div class="popup chengdubg">
+						<div class="popup">
 							<p>
 								电话：028-011121311
 							</p>
@@ -470,11 +441,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="large-split-6 medium-split-3 small-split-2">
+				<div class="item large-split-6 medium-split-3 small-split-2">
 					<div class="popupwrap">
 						<img src="images/zhengzhou.png"  alt="" />
 						<p style="line-height:3em;">郑洲分院</p>
-						<div class="popup zhengzhoubg">
+						<div class="popup">
 							<p>
 								电话：028-011121311
 							</p>
@@ -484,11 +455,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="large-split-6 medium-split-3 small-split-2">
+				<div class="item large-split-6 medium-split-3 small-split-2">
 					<div class="popupwrap">
 						<img src="images/nanchang.png"  alt="" />
 						<p style="line-height:3em;">南昌分院</p>
-						<div class="popup nanchangbg">
+						<div class="popup">
 							<p>
 								电话：028-011121311
 							</p>
@@ -498,11 +469,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="large-split-6 medium-split-3 small-split-2">
+				<div class="item large-split-6 medium-split-3 small-split-2">
 					<div class="popupwrap">
 						<img src="images/qingdao.png"  alt="" />
 						<p style="line-height:3em;">长沙分院</p>
-						<div class="popup qingdaobg">
+						<div class="popup">
 							<p>
 								电话：028-011121311
 							</p>
@@ -512,11 +483,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="large-split-6 medium-split-3 small-split-2">
+				<div class="item large-split-6 medium-split-3 small-split-2">
 					<div class="popupwrap">
 						<img src="images/chongqing.png"  alt="" />
 						<p style="line-height:3em;">长沙分院</p>
-						<div class="popup chongqingbg">
+						<div class="popup">
 							<p>
 								电话：028-011121311
 							</p>
@@ -526,7 +497,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="large-split-6 medium-split-3 small-split-2">
+				<div class="item large-split-6 medium-split-3 small-split-2">
 					<div class="popupwrap">
 						<img src="images/more.png"  alt="" />
 						<p style="line-height:3em;">正在筹建</p>
