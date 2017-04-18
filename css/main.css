@@ -46,7 +46,7 @@ body{
   $this .brand{
       display: inline-block;
       float: left;
-      height: 3em;
+      height: 2.5em;
       width: 70%;
       font-size:150%;
       background: url("../images/logo.png") center center no-repeat;
@@ -57,7 +57,7 @@ body{
     width:30%;
     text-align: right;
     color:#ffffff;
-    padding: 1em;
+    padding:0.6em;
     font-size: 150%;
   }
   $this .menu{
