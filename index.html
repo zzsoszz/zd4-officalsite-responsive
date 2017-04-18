@@ -45,11 +45,17 @@
 		#bannerWraper #banner{
 			margin:0;
 		}
+		#bannerWraper #banner.qslidemultiply .dotslist .dot {
+			border-radius: 0.335em;
+			width:0.67em;
+			height:0.67em;
+			line-height:1.5em;
+		}
 		#bannerWraper #banner.qslidemultiply .qslideviewbox .item {
 		    padding: 0px;
 		}
 		#bannerWraper #banner.qslidemultiply .dotsbox{
-			transform: translate(0px, -100%);
+			transform: translate(0px, -1em);
 		}
 		#bannerWraper #banner.qslidemultiply .qslideviewbox .item img{
 			width: 100%;
@@ -543,7 +549,7 @@ jQuery(document).ready(function(){
 	/**/
 	$("#banner").qslidemultiply({
 		pagesize:4,
-		speed:2,
+		speed:1,
 		// infinite:true,
 		// autorun:true,
 		responsive:[
@@ -593,6 +599,22 @@ jQuery(document).ready(function(){
 		        		min:1200
 		        	},
 		            items:4,
+		            nav:true,
+		            loop:false
+		        },
+		        {
+		        	breakpoint:{
+		        		min:1500
+		        	},
+		            items:5,
+		            nav:true,
+		            loop:false
+		        },
+		        {
+		        	breakpoint:{
+		        		min:1800
+		        	},
+		            items:6,
 		            nav:true,
 		            loop:false
 		        }
