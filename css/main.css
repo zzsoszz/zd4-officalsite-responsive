@@ -327,12 +327,14 @@ body{
   border-radius:0.2em;
   font-size:20px;
 }
-.timelinebox .timeitem .dot .top{
+.timelinebox .timeitem  .top{
+  text-align: left;
   color:#fff;
   position:absolute;
-  top:-170px;
+  top:-200px;
+  left: 10%;
   width: max-content;
-  width: 300px;
+  width: 90%;
   font-size:25px;
   font-weight:700;
 }
@@ -350,6 +352,8 @@ body{
   max-height:7em;
 }
 #timelinebox1.qslidemultiply{
+  margin:auto;
+  width:80%;
   height: 500px;
 }
 #timelinebox1.qslidemultiply .qslideviewbox .item{
