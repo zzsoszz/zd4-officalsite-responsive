@@ -328,11 +328,15 @@
     width:100%;
   }
   $this .menu .item{
+    display: inline-block;
     overflow: hidden;
     height:5em;
     width:100%;
     line-height:5em;
     position: relative;
+  }
+  $this .menu .item.active > label{
+   color:#4fb7e2;
   }
   $this .menu .item > label{
     margin:0 1em;
@@ -396,6 +400,9 @@
     margin:0 1em;
     font-size:120%;
     color:#fff;
+  }
+  $this .menu .item.active > label{
+   color:#4fb7e2;
   }
   $this .menu .item > .popdown{
     display:none;

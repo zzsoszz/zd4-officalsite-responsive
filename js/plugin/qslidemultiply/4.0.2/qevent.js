@@ -52,14 +52,15 @@
                     y: 0
 			};
 			$(this).on(settings.startevent, function (e) {
-				//e.preventDefault();
-			    originalCoord.x = (touchCapable) ? e.originalEvent.targetTouches[0].pageX : e.pageX;
-				originalCoord.y = (touchCapable) ? e.originalEvent.targetTouches[0].pageY : e.pageY;
+				e.preventDefault();
+			    originalCoord.x = (e.originalEvent.targetTouches) ? e.originalEvent.targetTouches[0].pageX : e.pageX;
+				originalCoord.y = (e.originalEvent.targetTouches) ? e.originalEvent.targetTouches[0].pageY : e.pageY;
 			});
 			$(this).on(settings.endevent, function (e) {
+				e.preventDefault();
 				$this = $(e.currentTarget);
-			    finalCoord.x = (touchCapable) ? e.originalEvent.changedTouches[0].pageX : e.pageX;
-				finalCoord.y = (touchCapable) ? e.originalEvent.changedTouches[0].pageY : e.pageY;
+			    finalCoord.x = (e.originalEvent.targetTouches) ? e.originalEvent.targetTouches[0].pageX : e.pageX;
+				finalCoord.y = (e.originalEvent.targetTouches) ? e.originalEvent.targetTouches[0].pageY : e.pageY;
 			    var direction = GetSlideDirection(originalCoord.x, originalCoord.y, finalCoord.x, finalCoord.y);
 			    switch (direction) {
 				        case 0:

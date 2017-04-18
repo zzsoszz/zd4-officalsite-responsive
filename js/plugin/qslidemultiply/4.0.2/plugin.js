@@ -350,21 +350,30 @@
 			};
 			self.renderPager=function()
 			{
-				if(self.viewport.width  <= 600){
-					self.pager.setPageSize(1);
-				}else if(self.viewport.width > 600 && self.viewport.width <= 900 ){
-					self.pager.setPageSize(2);
-				}else if(self.viewport.width > 900 && self.viewport.width <= 1200 ){
-					self.pager.setPageSize(3);
-				}else if(self.viewport.width > 1200){
-					self.pager.setPageSize(4);
+				var matchedArray=$(self.options.responsive).filter(function(obj) {
+					if(!this.breakpoint.min)
+					{
+						this.breakpoint.min=0;
+					}
+					if(!this.breakpoint.max)
+					{
+						this.breakpoint.max=999999999;
+					}
+					if (self.viewport.width >this.breakpoint.min && self.viewport.width <= this.breakpoint.max) {
+						return true;
+					}
+				}).get();
+				if(matchedArray.length>0)
+				{
+					var breakpoint=matchedArray[matchedArray.length-1];
+					self.pager.setPageSize(breakpoint.items);
+			  		var  curPageData=self.pager.getCurrentPageData();
+			  		for(var i=0;i<curPageData.length;i++)
+			  		{
+			  			$(curPageData[i]).css("transform","translateX("+(i*100)+"%)");
+			  		};
+			  		self.freshPager();
 				}
-		  		var  curPageData=self.pager.getCurrentPageData();
-		  		for(var i=0;i<curPageData.length;i++)
-		  		{
-		  			$(curPageData[i]).css("transform","translateX("+(i*100)+"%)");
-		  		};
-		  		self.freshPager();
 			};
 			self.renderChildren=function()
 			{
@@ -419,17 +428,12 @@
 				});
 		  		$(window).trigger("resize");
 
-		  		/**/
 		  		target.on("swiperight",function(e){
-		  			e.preventDefault();
 					self.turnPrev();
 				});
 				target.on("swipeleft",function(e){
-					e.preventDefault();
 					self.turnNext();
 				});
-				
-
 
 		  	};
 
