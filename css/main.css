@@ -284,7 +284,6 @@ body{
 */
 
 .timelinebox{
-  overflow:hidden;
   padding:200px 0;
 }
 .timelinebox .timeitem{
@@ -342,12 +341,13 @@ body{
   left:-10px;
   top:50px;
   width: 100%;
+  height:14em;
   object-fit:cover;
   overflow: hidden;
   text-align: center;
 }
 .timelinebox .timeitem .bottom img{
-  
+  max-height:7em;
 }
 #timelinebox1.qslidemultiply{
   height: 500px;
