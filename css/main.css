@@ -282,9 +282,10 @@ body{
 /*
   coursecenter
 */
+
 .timelinebox{
   overflow:hidden;
-  padding:300px 0;
+  padding:200px 0;
 }
 .timelinebox .timeitem{
   height:5px;
@@ -330,27 +331,29 @@ body{
 .timelinebox .timeitem .dot .top{
   color:#fff;
   position:absolute;
-  top:-150px;
-  width: 250px;
+  top:-170px;
   width: max-content;
+  width: 300px;
   font-size:25px;
   font-weight:700;
 }
-.timelinebox .timeitem .dot .bottom{
+.timelinebox .timeitem .bottom{
   position:absolute;
   left:-10px;
   top:50px;
-  width: max-content;
+  width: 100%;
+  object-fit:cover;
+  overflow: hidden;
+  text-align: center;
 }
-.timelinebox .timeitem .dot .bottom img{
-  padding:5px;
-}
-#timelinebox1{
-  height: 600px;
+.timelinebox .timeitem .bottom img{
+  
 }
 #timelinebox1.qslidemultiply .qslideviewbox .item{
     position: absolute;
     width: 400px;
+    height:500px;
+    height: fit-content;
     padding:0px;
 }
 #timelinebox1.qslidemultiply .prev{
@@ -359,4 +362,5 @@ body{
 #timelinebox1.qslidemultiply .next{
   transform: translate(150%, -50%);
 }
+
 
