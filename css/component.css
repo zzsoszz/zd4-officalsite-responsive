@@ -1,47 +1,44 @@
-/*.qcarrousel {
-    width:100%;
-    position: relative;
-    background: #ffffff;
-    margin-bottom:10px;
-}
-.qcarrousel .itembox{
-   
-}
-.qcarrousel .itembox .item {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-.qcarrousel .itembox .item > img {
-    width: 100%;
-}
-.qcarrousel .itembox .item.active {
-    display: block;
-}
-.qcarrousel .dotsbox {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-}
-.qcarrousel .dotsbox .dotslist {
-    display: inline-block;
-    background: transparent;
-}
-.qcarrousel .dotsbox .dotslist .dot {
-    display: inline-block;
-    border-top:2px solid #333333;
-    height:50px;
-    background:transparent;
-    width:200px;
-    cursor:pointer;
-}
-.qcarrousel .dotsbox .dotslist .dot.active {
-    border-top:2px solid #fff;
-}*/
 
-
+.btn{
+  text-align:center;
+  display:inline-block;
+  line-height:2em;
+  height:2em;
+  padding:0 1em;
+  border:2px solid #c9c9c9; 
+  cursor: pointer;
+}
+.btn.verylarge{
+  line-height:3em;
+  height:3em;
+}
+.btn.large{
+  line-height:2.5em;
+  height:2.5em;
+}
+.btn.white{
+  border:2px solid #c9c9c9; 
+  background:white;
+  color:#e7313d;
+}
+.btn.red{
+ border:2px solid #e7313d; 
+ background:#e7313d;
+ color:#ffffff;
+}
+.btn.gray{
+ border:2px solid #e7313d; 
+ background:#e7313d;
+ color:#ffffff;
+}
+.btn.primary{
+ border:2px solid #4fb7e2; 
+ background:#4fb7e2;
+ color:#ffffff;
+}
+.btn.twosideround{
+  border-radius:2em;
+}
 
 .hmenu {
   margin:auto;
