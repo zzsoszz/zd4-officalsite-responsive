@@ -252,3 +252,47 @@
       -ms-flex:none;/*相当于none*/
           flex:none;/*相当于none*/
 }
+
+
+
+.popbox{
+  position:fixed;
+  top:0;
+  bottom:0;
+  z-index:3;
+  height:auto;
+  width:100%;
+}
+.popbox.show{
+  display:block;
+}
+.popbox.hide{
+  display:none;
+}
+.popbox .popmask{
+  position:absolute;
+  bottom:0;
+  top:0;
+  width:100%;
+  background:#000000;
+  opacity:0.9;
+}
+.popbox .popcontent{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+  opacity:1;
+  bottom:0;
+  background:transparent;
+}
+.popbox .popcontent .popinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #ffffff;
+    border-radius:1em;
+}
+
