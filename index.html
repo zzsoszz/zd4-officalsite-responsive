@@ -469,7 +469,7 @@
 		</div>
 	</div>
 
-
+	
 	<div class="footer" >
 		<div style="width: 80%;margin:auto;">
 			<div class="row  bottom-lg" style="">
@@ -494,7 +494,7 @@
 					<div style="margin-top:1em;">波士商学院微信公众号</div>
 				</div>
 			</div>
-			<div  style="margin-top:2em;font-size:80%;color:#fff;opacity:0.5">
+			<div  style="margin-top:2em;margin-bottom:5em;font-size:80%;color:#fff;opacity:0.5">
 					<span>北京波士商学院教育科技有限公司</span> 
 					<span style="margin-left:2em;">www.bossapp.cn</span> 
 					<span style="margin-left:1em;">2015-2016</span> 
@@ -504,8 +504,49 @@
 			</div>
 		</div>
 	</div>
-
 	
+	
+	<div class="footermobile" style="position: fixed;text-align:center;padding:2% 0;bottom:0;width:100%;background-color: rgba(40,40,40,0.8);z-index:5;color:#ffffff;">
+		<div class="qflexbox space-around">
+			<div class="fixiedarea">
+				<img src="images/home.png" style="max-width:80%" >
+				<div>主页</div>
+			</div>
+			<a href="tel:13730666347" class="fixiedarea" style="color:#ffffff;">
+				<img src="images/phone.png" style="max-width:80%" >
+				<div>电话</div>
+			</a>
+			<div class="fixiedarea" id="leaveMessageBtn">
+				<img src="images/message.png" style="max-width:80%"  >
+				<div>留言</div>
+			</div>
+			<a href="mailto:13730666347" class="fixiedarea" style="color:#ffffff;">
+				<img src="images/email.png" style="max-width:80%" >
+				<div>邮件</div>
+			</a>
+		</div>
+	</div>
+	
+
+	<div class="popbox hide">
+		<div class="popmask" style="background:#333333;opacity: 1">
+		</div>
+		<div class="popcontent">
+					<div style="text-align: center;padding:2em 0.5em;font-size:120%;">
+						<h1 style="color:#fff;">
+						在线留言
+						</h1>
+						<input type="input" placeholder="姓名" style="padding:1em;width:80%;">
+						<input type="input" placeholder="电话" style="padding:1em;margin-top:1em;width:80%;">
+						<textarea  placeholder="留言内容" style="padding:1em;margin-top:1em;width:80%;height:20em;"></textarea>
+						<div>
+							<input id="submitBtn" class="btn verylarge twosideround primary" style="width:80%;margin-top:1em;" value="提交" type="button">
+						</div>
+					<div>
+		</div>
+	</div>
+	
+
 </body>
 
 <link rel="stylesheet" href="js/plugin/qcarrousel/1.0.2/plugin.css">
@@ -519,7 +560,7 @@
 <script>
 jQuery(document).ready(function(){
 	//$(".qcarrousel").qcarrousel({autoRun:false});
-	/**/
+	
 	$("#banner").qslidemultiply({
 		pagesize:4,
 		speed:1,
@@ -537,7 +578,13 @@ jQuery(document).ready(function(){
 	    ]
 	});
 	
-
+	$("#leaveMessageBtn").on("click",function(){
+		$(".popbox").removeClass("hide");
+	});
+	$("#submitBtn").on("click",function(){
+		alert("感谢您的留言！");
+		$(".popbox").addClass("hide");
+	});
 	$("#teachers").qslidemultiply({
 		pagesize:4,
 		speed:0.5,
