@@ -206,7 +206,9 @@ body{
 */
 .video-wraper{
   position: relative;
+  /*
   background:lime;
+  */
   padding-top:calc(100%/(560/350));
 }
 .video-wraper  embed{
